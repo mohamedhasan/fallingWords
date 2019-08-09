@@ -10,6 +10,12 @@ import UIKit
 
 class GameViewController: BaseViewController {
 
+    @IBOutlet weak var viewCorrect : UIView?
+    @IBOutlet weak var viewFalse : UIView?
+    @IBOutlet weak var labelTimer : UILabel?
+    @IBOutlet weak var labelCounter : UILabel?
+    @IBOutlet weak var labelTranslation : UILabel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
