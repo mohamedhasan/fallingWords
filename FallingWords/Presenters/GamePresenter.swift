@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol GamePresenterProtocol {
+    
+}
+
 class GamePresenter: NSObject {
 
 }

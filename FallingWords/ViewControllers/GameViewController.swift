@@ -16,6 +16,11 @@ class GameViewController: BaseViewController {
         // Do any additional setup after loading the view.
     }
     
+    static func gameViewController() -> GameViewController? {
+        
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        return storyBoard.instantiateViewController(withIdentifier: "gameViewController") as? GameViewController
+    }
 
     /*
     // MARK: - Navigation

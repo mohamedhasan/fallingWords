@@ -8,6 +8,25 @@
 
 import UIKit
 
+protocol WelcomePresenterProtocol {
+    func wordsLoaded()
+    func errorOccured()
+}
+
 class WelcomePresenter: NSObject {
 
+    var delegate : WelcomePresenterProtocol?
+    
+    func loadWords() {
+        LanguageHandler.sharedInstance.loadWords(success: { () in
+            self.delegate?.wordsLoaded()
+        }) { (error) in
+            self.delegate?.errorOccured()
+        }
+    }
+    
+    func switchLanguage(index: Int) {
+        
+    }
+    
 }

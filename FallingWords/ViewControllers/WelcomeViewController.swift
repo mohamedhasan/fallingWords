@@ -8,15 +8,36 @@
 
 import UIKit
 
-class WelcomeViewController: BaseViewController {
-
+class WelcomeViewController: BaseViewController,WelcomePresenterProtocol {
+    
+    let presenter = WelcomePresenter()
+    
+    @IBOutlet weak var startButton : UIButton?
+    @IBOutlet weak var languageSegmentedControl : UISegmentedControl?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        presenter.delegate = self
     }
     
-
+    @IBAction func start() {
+        startButton?.isEnabled = false
+        presenter.loadWords()
+    }
+    
+    @IBAction func switchLanguage() {
+        presenter.switchLanguage(index: languageSegmentedControl?.selectedSegmentIndex ?? 0)
+    }
+    
+    func wordsLoaded() {
+        startButton?.isEnabled = true
+        if let gameVC = GameViewController.gameViewController() {
+            self.present(gameVC, animated: true, completion: nil)
+        }
+    }
+    func errorOccured() {
+        //Show some error to the user :)
+    }
     /*
     // MARK: - Navigation
 
