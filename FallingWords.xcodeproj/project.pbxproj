@@ -8,12 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		9F35124322FDAF9C008446E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35124222FDAF9C008446E2 /* AppDelegate.swift */; };
-		9F35124522FDAF9C008446E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35124422FDAF9C008446E2 /* ViewController.swift */; };
 		9F35124822FDAF9C008446E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F35124622FDAF9C008446E2 /* Main.storyboard */; };
 		9F35124A22FDAF9E008446E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F35124922FDAF9E008446E2 /* Assets.xcassets */; };
 		9F35124D22FDAF9E008446E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F35124B22FDAF9E008446E2 /* LaunchScreen.storyboard */; };
 		9F35125822FDAF9E008446E2 /* FallingWordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35125722FDAF9E008446E2 /* FallingWordsTests.swift */; };
 		9F35126322FDAF9E008446E2 /* FallingWordsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35126222FDAF9E008446E2 /* FallingWordsUITests.swift */; };
+		9F35127422FDB04E008446E2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35127322FDB04E008446E2 /* BaseViewController.swift */; };
+		9F35127522FDB04E008446E2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35127322FDB04E008446E2 /* BaseViewController.swift */; };
+		9F35127622FDB04E008446E2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35127322FDB04E008446E2 /* BaseViewController.swift */; };
+		9F35127822FDB065008446E2 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35127722FDB065008446E2 /* WelcomeViewController.swift */; };
+		9F35127922FDB065008446E2 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35127722FDB065008446E2 /* WelcomeViewController.swift */; };
+		9F35127A22FDB065008446E2 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35127722FDB065008446E2 /* WelcomeViewController.swift */; };
+		9F35127C22FDB075008446E2 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35127B22FDB074008446E2 /* GameViewController.swift */; };
+		9F35127D22FDB075008446E2 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35127B22FDB074008446E2 /* GameViewController.swift */; };
+		9F35127E22FDB075008446E2 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35127B22FDB074008446E2 /* GameViewController.swift */; };
+		9F35128022FDB0A4008446E2 /* WelcomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35127F22FDB0A4008446E2 /* WelcomePresenter.swift */; };
+		9F35128122FDB0A4008446E2 /* WelcomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35127F22FDB0A4008446E2 /* WelcomePresenter.swift */; };
+		9F35128222FDB0A4008446E2 /* WelcomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35127F22FDB0A4008446E2 /* WelcomePresenter.swift */; };
+		9F35128422FDB0B1008446E2 /* GamePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35128322FDB0B1008446E2 /* GamePresenter.swift */; };
+		9F35128522FDB0B1008446E2 /* GamePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35128322FDB0B1008446E2 /* GamePresenter.swift */; };
+		9F35128622FDB0B1008446E2 /* GamePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35128322FDB0B1008446E2 /* GamePresenter.swift */; };
+		9F35128922FDB10B008446E2 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35128822FDB10A008446E2 /* Game.swift */; };
+		9F35128A22FDB10B008446E2 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35128822FDB10A008446E2 /* Game.swift */; };
+		9F35128B22FDB10B008446E2 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35128822FDB10A008446E2 /* Game.swift */; };
+		9F35128D22FDB153008446E2 /* LanguageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35128C22FDB153008446E2 /* LanguageHandler.swift */; };
+		9F35128E22FDB153008446E2 /* LanguageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35128C22FDB153008446E2 /* LanguageHandler.swift */; };
+		9F35128F22FDB153008446E2 /* LanguageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35128C22FDB153008446E2 /* LanguageHandler.swift */; };
+		9F35129122FDB162008446E2 /* GameHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35129022FDB162008446E2 /* GameHandler.swift */; };
+		9F35129222FDB162008446E2 /* GameHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35129022FDB162008446E2 /* GameHandler.swift */; };
+		9F35129322FDB162008446E2 /* GameHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35129022FDB162008446E2 /* GameHandler.swift */; };
+		9F35129A22FDB1B6008446E2 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F35129522FDB196008446E2 /* words.json */; };
+		9F35129B22FDB1B7008446E2 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F35129522FDB196008446E2 /* words.json */; };
+		9F35129C22FDB1B8008446E2 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F35129522FDB196008446E2 /* words.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +62,6 @@
 /* Begin PBXFileReference section */
 		9F35123F22FDAF9C008446E2 /* FallingWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FallingWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F35124222FDAF9C008446E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9F35124422FDAF9C008446E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9F35124722FDAF9C008446E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F35124922FDAF9E008446E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F35124C22FDAF9E008446E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +72,15 @@
 		9F35125E22FDAF9E008446E2 /* FallingWordsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FallingWordsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F35126222FDAF9E008446E2 /* FallingWordsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallingWordsUITests.swift; sourceTree = "<group>"; };
 		9F35126422FDAF9E008446E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F35127322FDB04E008446E2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		9F35127722FDB065008446E2 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		9F35127B22FDB074008446E2 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		9F35127F22FDB0A4008446E2 /* WelcomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePresenter.swift; sourceTree = "<group>"; };
+		9F35128322FDB0B1008446E2 /* GamePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePresenter.swift; sourceTree = "<group>"; };
+		9F35128822FDB10A008446E2 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		9F35128C22FDB153008446E2 /* LanguageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageHandler.swift; sourceTree = "<group>"; };
+		9F35129022FDB162008446E2 /* GameHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHandler.swift; sourceTree = "<group>"; };
+		9F35129522FDB196008446E2 /* words.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = words.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +131,16 @@
 		9F35124122FDAF9C008446E2 /* FallingWords */ = {
 			isa = PBXGroup;
 			children = (
+				9F35127222FDB013008446E2 /* Models */,
+				9F35127122FDB006008446E2 /* ViewControllers */,
+				9F35127022FDAFFD008446E2 /* Presenters */,
+				9F35128722FDB0C1008446E2 /* Handlers */,
 				9F35124222FDAF9C008446E2 /* AppDelegate.swift */,
-				9F35124422FDAF9C008446E2 /* ViewController.swift */,
 				9F35124622FDAF9C008446E2 /* Main.storyboard */,
 				9F35124922FDAF9E008446E2 /* Assets.xcassets */,
 				9F35124B22FDAF9E008446E2 /* LaunchScreen.storyboard */,
 				9F35124E22FDAF9E008446E2 /* Info.plist */,
+				9F35129522FDB196008446E2 /* words.json */,
 			);
 			path = FallingWords;
 			sourceTree = "<group>";
@@ -123,6 +161,42 @@
 				9F35126422FDAF9E008446E2 /* Info.plist */,
 			);
 			path = FallingWordsUITests;
+			sourceTree = "<group>";
+		};
+		9F35127022FDAFFD008446E2 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				9F35127F22FDB0A4008446E2 /* WelcomePresenter.swift */,
+				9F35128322FDB0B1008446E2 /* GamePresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		9F35127122FDB006008446E2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9F35127322FDB04E008446E2 /* BaseViewController.swift */,
+				9F35127722FDB065008446E2 /* WelcomeViewController.swift */,
+				9F35127B22FDB074008446E2 /* GameViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9F35127222FDB013008446E2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9F35128822FDB10A008446E2 /* Game.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9F35128722FDB0C1008446E2 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				9F35128C22FDB153008446E2 /* LanguageHandler.swift */,
+				9F35129022FDB162008446E2 /* GameHandler.swift */,
+			);
+			path = Handlers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F35124D22FDAF9E008446E2 /* LaunchScreen.storyboard in Resources */,
+				9F35129A22FDB1B6008446E2 /* words.json in Resources */,
 				9F35124A22FDAF9E008446E2 /* Assets.xcassets in Resources */,
 				9F35124822FDAF9C008446E2 /* Main.storyboard in Resources */,
 			);
@@ -239,6 +314,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F35129B22FDB1B7008446E2 /* words.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +322,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F35129C22FDB1B8008446E2 /* words.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +333,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F35124522FDAF9C008446E2 /* ViewController.swift in Sources */,
+				9F35127C22FDB075008446E2 /* GameViewController.swift in Sources */,
+				9F35128022FDB0A4008446E2 /* WelcomePresenter.swift in Sources */,
+				9F35128D22FDB153008446E2 /* LanguageHandler.swift in Sources */,
+				9F35128922FDB10B008446E2 /* Game.swift in Sources */,
+				9F35128422FDB0B1008446E2 /* GamePresenter.swift in Sources */,
+				9F35129122FDB162008446E2 /* GameHandler.swift in Sources */,
+				9F35127822FDB065008446E2 /* WelcomeViewController.swift in Sources */,
 				9F35124322FDAF9C008446E2 /* AppDelegate.swift in Sources */,
+				9F35127422FDB04E008446E2 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +349,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F35127D22FDB075008446E2 /* GameViewController.swift in Sources */,
+				9F35128122FDB0A4008446E2 /* WelcomePresenter.swift in Sources */,
+				9F35128E22FDB153008446E2 /* LanguageHandler.swift in Sources */,
+				9F35128A22FDB10B008446E2 /* Game.swift in Sources */,
+				9F35128522FDB0B1008446E2 /* GamePresenter.swift in Sources */,
+				9F35129222FDB162008446E2 /* GameHandler.swift in Sources */,
+				9F35127922FDB065008446E2 /* WelcomeViewController.swift in Sources */,
 				9F35125822FDAF9E008446E2 /* FallingWordsTests.swift in Sources */,
+				9F35127522FDB04E008446E2 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +365,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F35127E22FDB075008446E2 /* GameViewController.swift in Sources */,
+				9F35128222FDB0A4008446E2 /* WelcomePresenter.swift in Sources */,
+				9F35128F22FDB153008446E2 /* LanguageHandler.swift in Sources */,
+				9F35128B22FDB10B008446E2 /* Game.swift in Sources */,
+				9F35128622FDB0B1008446E2 /* GamePresenter.swift in Sources */,
+				9F35129322FDB162008446E2 /* GameHandler.swift in Sources */,
+				9F35127A22FDB065008446E2 /* WelcomeViewController.swift in Sources */,
 				9F35126322FDAF9E008446E2 /* FallingWordsUITests.swift in Sources */,
+				9F35127622FDB04E008446E2 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,7 +532,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FallingWords/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -440,6 +542,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Babbel.FallingWords;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -449,7 +552,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FallingWords/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,6 +562,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Babbel.FallingWords;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
