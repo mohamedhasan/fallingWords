@@ -10,6 +10,8 @@ import UIKit
 
 class GameViewController: BaseViewController {
 
+    let presenter = GamePresenter()
+    
     @IBOutlet weak var viewCorrect : UIView?
     @IBOutlet weak var viewFalse : UIView?
     @IBOutlet weak var labelTimer : UILabel?
@@ -18,8 +20,7 @@ class GameViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        presenter.startGame()
     }
     
     static func gameViewController() -> GameViewController? {

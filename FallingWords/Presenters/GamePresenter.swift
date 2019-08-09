@@ -14,4 +14,9 @@ protocol GamePresenterProtocol {
 
 class GamePresenter: NSObject {
 
+    let game = GameHandler.sharedInstance.game
+    
+    func startGame() {
+        
+    }
 }
