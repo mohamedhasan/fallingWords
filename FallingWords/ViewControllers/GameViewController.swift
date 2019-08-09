@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GameViewController: BaseViewController {
+class GameViewController: BaseViewController,GamePresenterProtocol {
 
     let presenter = GamePresenter()
     
@@ -20,6 +20,7 @@ class GameViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.delegate = self
         presenter.startGame()
     }
     
@@ -29,6 +30,18 @@ class GameViewController: BaseViewController {
         return storyBoard.instantiateViewController(withIdentifier: "gameViewController") as? GameViewController
     }
 
+    func updateTimer(time:Int) {
+        self.labelTimer?.text =  "\(time)"
+    }
+    
+    func updateScore(score:Int) {
+        
+    }
+    
+    func giveFeedBack(positive:Bool) {
+        
+    }
+    
     /*
     // MARK: - Navigation
 

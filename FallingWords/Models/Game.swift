@@ -16,7 +16,7 @@ enum GameLevel {
 
 class Game: NSObject {
 
-    
+    static let gameTime = 120
     var score : Double = 0.0
     var timeSpent : Int = 0
     
