@@ -140,10 +140,11 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6l3-87-68B">
-                                <rect key="frame" x="79" y="627" width="217" height="40"/>
+                                <rect key="frame" x="80" y="627" width="215" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Translation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bH-5n-1pv">
-                                        <rect key="frame" x="0.0" y="5.5" width="217" height="29"/>
+                                        <rect key="frame" x="0.0" y="5.5" width="215" height="29"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="29"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -164,10 +165,10 @@
                             <constraint firstItem="GDQ-Qw-ryY" firstAttribute="top" secondItem="teb-hK-K0M" secondAttribute="top" id="0ah-OH-0Tc"/>
                             <constraint firstItem="kre-8b-mW2" firstAttribute="top" secondItem="GDQ-Qw-ryY" secondAttribute="bottom" id="6Mb-sM-r6E"/>
                             <constraint firstItem="e9b-uf-h3u" firstAttribute="centerX" secondItem="VEL-xg-W2p" secondAttribute="centerX" id="6el-7S-8fy"/>
-                            <constraint firstItem="6l3-87-68B" firstAttribute="leading" secondItem="kre-8b-mW2" secondAttribute="trailing" constant="-1" id="89L-Jv-uZ8"/>
+                            <constraint firstItem="6l3-87-68B" firstAttribute="leading" secondItem="kre-8b-mW2" secondAttribute="trailing" id="89L-Jv-uZ8"/>
                             <constraint firstItem="VEL-xg-W2p" firstAttribute="trailing" secondItem="zkb-0Q-Fn5" secondAttribute="trailing" id="Bbb-fd-QEl"/>
                             <constraint firstItem="kre-8b-mW2" firstAttribute="bottom" secondItem="zkb-0Q-Fn5" secondAttribute="bottom" id="PAD-Si-4qz"/>
-                            <constraint firstItem="VEL-xg-W2p" firstAttribute="leading" secondItem="6l3-87-68B" secondAttribute="trailing" constant="-1" id="PV5-jV-TCY"/>
+                            <constraint firstItem="VEL-xg-W2p" firstAttribute="leading" secondItem="6l3-87-68B" secondAttribute="trailing" id="PV5-jV-TCY"/>
                             <constraint firstItem="6l3-87-68B" firstAttribute="bottom" secondItem="zkb-0Q-Fn5" secondAttribute="bottom" id="cmO-Oc-PEm"/>
                             <constraint firstItem="e9b-uf-h3u" firstAttribute="centerY" secondItem="VEL-xg-W2p" secondAttribute="centerY" id="dFC-pJ-X2y"/>
                             <constraint firstItem="kre-8b-mW2" firstAttribute="leading" secondItem="zkb-0Q-Fn5" secondAttribute="leading" id="e6b-7G-a3f"/>
