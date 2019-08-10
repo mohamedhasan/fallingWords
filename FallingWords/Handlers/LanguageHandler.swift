@@ -19,7 +19,7 @@ class LanguageHandler: NSObject {
     
     func loadWords(success:()->Void,errorHandler:(Error?)->Void) {
         
-        if let path = Bundle.main.path(forResource: "words", ofType: "json") {
+        if let path = Bundle(for: type(of: self)).path(forResource: "words", ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
@@ -48,6 +48,7 @@ class LanguageHandler: NSObject {
 /**
  I used this code from to pick random collection of the question and show the user in each test :
  code source : https://stackoverflow.com/a/45011690
+ But I included unit testing for it
  **/
 extension Array {
     /// Picks `n` random elements (partial Fisher-Yates shuffle approach)

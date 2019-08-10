@@ -11,7 +11,6 @@
 		9F35124822FDAF9C008446E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F35124622FDAF9C008446E2 /* Main.storyboard */; };
 		9F35124A22FDAF9E008446E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F35124922FDAF9E008446E2 /* Assets.xcassets */; };
 		9F35124D22FDAF9E008446E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F35124B22FDAF9E008446E2 /* LaunchScreen.storyboard */; };
-		9F35125822FDAF9E008446E2 /* FallingWordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35125722FDAF9E008446E2 /* FallingWordsTests.swift */; };
 		9F35126322FDAF9E008446E2 /* FallingWordsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35126222FDAF9E008446E2 /* FallingWordsUITests.swift */; };
 		9F35127422FDB04E008446E2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35127322FDB04E008446E2 /* BaseViewController.swift */; };
 		9F35127522FDB04E008446E2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35127322FDB04E008446E2 /* BaseViewController.swift */; };
@@ -40,6 +39,8 @@
 		9F35129A22FDB1B6008446E2 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F35129522FDB196008446E2 /* words.json */; };
 		9F35129B22FDB1B7008446E2 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F35129522FDB196008446E2 /* words.json */; };
 		9F35129C22FDB1B8008446E2 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F35129522FDB196008446E2 /* words.json */; };
+		9FDB88F522FED28B00A9460F /* LanguageHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDB88F422FED28B00A9460F /* LanguageHandlerTests.swift */; };
+		9FDB88F722FED5F100A9460F /* GameHandlerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDB88F622FED5F100A9460F /* GameHandlerTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +68,6 @@
 		9F35124C22FDAF9E008446E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F35124E22FDAF9E008446E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F35125322FDAF9E008446E2 /* FallingWordsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FallingWordsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F35125722FDAF9E008446E2 /* FallingWordsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallingWordsTests.swift; sourceTree = "<group>"; };
 		9F35125922FDAF9E008446E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F35125E22FDAF9E008446E2 /* FallingWordsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FallingWordsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F35126222FDAF9E008446E2 /* FallingWordsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallingWordsUITests.swift; sourceTree = "<group>"; };
@@ -81,6 +81,8 @@
 		9F35128C22FDB153008446E2 /* LanguageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageHandler.swift; sourceTree = "<group>"; };
 		9F35129022FDB162008446E2 /* GameHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHandler.swift; sourceTree = "<group>"; };
 		9F35129522FDB196008446E2 /* words.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = words.json; sourceTree = "<group>"; };
+		9FDB88F422FED28B00A9460F /* LanguageHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageHandlerTests.swift; sourceTree = "<group>"; };
+		9FDB88F622FED5F100A9460F /* GameHandlerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHandlerTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,8 +150,9 @@
 		9F35125622FDAF9E008446E2 /* FallingWordsTests */ = {
 			isa = PBXGroup;
 			children = (
-				9F35125722FDAF9E008446E2 /* FallingWordsTests.swift */,
 				9F35125922FDAF9E008446E2 /* Info.plist */,
+				9FDB88F422FED28B00A9460F /* LanguageHandlerTests.swift */,
+				9FDB88F622FED5F100A9460F /* GameHandlerTest.swift */,
 			);
 			path = FallingWordsTests;
 			sourceTree = "<group>";
@@ -351,12 +354,13 @@
 			files = (
 				9F35127D22FDB075008446E2 /* GameViewController.swift in Sources */,
 				9F35128122FDB0A4008446E2 /* WelcomePresenter.swift in Sources */,
+				9FDB88F722FED5F100A9460F /* GameHandlerTest.swift in Sources */,
 				9F35128E22FDB153008446E2 /* LanguageHandler.swift in Sources */,
 				9F35128A22FDB10B008446E2 /* Game.swift in Sources */,
+				9FDB88F522FED28B00A9460F /* LanguageHandlerTests.swift in Sources */,
 				9F35128522FDB0B1008446E2 /* GamePresenter.swift in Sources */,
 				9F35129222FDB162008446E2 /* GameHandler.swift in Sources */,
 				9F35127922FDB065008446E2 /* WelcomeViewController.swift in Sources */,
-				9F35125822FDAF9E008446E2 /* FallingWordsTests.swift in Sources */,
 				9F35127522FDB04E008446E2 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -573,7 +577,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FallingWordsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -582,6 +588,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Babbel.FallingWordsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FallingWords.app/FallingWords";
@@ -593,7 +600,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FallingWordsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -602,6 +611,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Babbel.FallingWordsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FallingWords.app/FallingWords";

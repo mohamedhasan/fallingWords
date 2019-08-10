@@ -59,10 +59,6 @@ class GameHandler: NSObject {
         return result
     }
     
-    private func updateScore(change:Int) {
-        
-    }
-    
     private func createQuestionsAnswersTuples(size:Int) -> ([String],[String]) {
         
         var words = [String]()
