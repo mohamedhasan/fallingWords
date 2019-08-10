@@ -8,6 +8,18 @@
 
 import UIKit
 
+enum AnswerType {
+    case right
+    case wrong
+    case noAnswer
+}
+
+enum QuestionResult {
+    case right
+    case wrong
+    case noAnswer
+}
+
 class GameHandler: NSObject {
 
     static let sharedInstance = GameHandler()
@@ -19,9 +31,36 @@ class GameHandler: NSObject {
     
     func startNewGame(sourceLang:String,destLang:String) {
         game = Game(sourceLang: sourceLang, destLang: destLang)
-        let wordsTranslations : ([String],[String]) = createQuestionsAnswersTuples(size: 15)
+        let wordsTranslations : ([String],[String]) = createQuestionsAnswersTuples(size: Game.numberOfQuestions)
         game?.words = wordsTranslations.0
         game?.translations = wordsTranslations.1
+    }
+    
+    func submitAnswer(word:String,translation:String,answer:AnswerType) -> (QuestionResult){
+        
+        let rightTranslation = game?.rightTranslation(word: word)
+        let translationCorrect = rightTranslation == translation
+        var result : QuestionResult
+        
+        switch answer {
+        case .right:
+            result = translationCorrect ? .right : .wrong
+            game?.updateScore(scoreChange: translationCorrect ? 1 : -1)
+            break
+        case .wrong:
+            result = translationCorrect ? .wrong : .right
+            game?.updateScore(scoreChange: translationCorrect ? -1 : 1)
+            break
+        default:
+            result = .noAnswer
+            break
+        }
+        
+        return result
+    }
+    
+    private func updateScore(change:Int) {
+        
     }
     
     private func createQuestionsAnswersTuples(size:Int) -> ([String],[String]) {

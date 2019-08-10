@@ -17,7 +17,13 @@ enum GameLevel {
 class Game: NSObject {
 
     static let gameTime = 120
-    var score : Double = 0.0
+    static let numberOfQuestions = 20
+    static let questionTime = 6
+    private var scoreHolder : Int = 0
+    var score : Int {
+        return scoreHolder
+    }
+    
     var timeSpent : Int = 0
     
     //level to be used in future:
@@ -32,6 +38,20 @@ class Game: NSObject {
     init(sourceLang:String,destLang:String) {
         self.sourceLang = sourceLang
         self.destLang = destLang
+    }
+    
+    func rightTranslation(word:String) -> String {
+        if let index = words.firstIndex(of: word) {
+            return translations[index]
+        }
+        return ""
+    }
+    
+    //Score will never be below ZERO
+    func updateScore(scoreChange:Int) {
+        if scoreHolder + scoreChange > 0 {
+            scoreHolder = scoreHolder + scoreChange
+        }
     }
     
 }

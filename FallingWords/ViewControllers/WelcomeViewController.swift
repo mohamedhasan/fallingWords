@@ -14,11 +14,12 @@ class WelcomeViewController: BaseViewController,WelcomePresenterProtocol {
     
     @IBOutlet weak var startButton : UIButton?
     @IBOutlet weak var languageSegmentedControl : UISegmentedControl?
+    var gameViewController : GameViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter.delegate = self
-    }
+        presenter.delegate = self    
+        }
     
     @IBAction func start() {
         startButton?.isEnabled = false
@@ -32,11 +33,31 @@ class WelcomeViewController: BaseViewController,WelcomePresenterProtocol {
     func wordsLoaded() {
         startButton?.isEnabled = true
         if let gameVC = GameViewController.gameViewController() {
+            gameViewController = gameVC
             self.present(gameVC, animated: true, completion: nil)
         }
     }
     func errorOccured() {
         //Show some error to the user :)
+    }
+    
+    //Dismiss GameViewController and Show user Last Score
+    func handleClosingGame() {
+        gameViewController?.dismiss(animated: true, completion: {
+            self.showlastGameAlert()
+        })
+    }
+    
+    func showlastGameAlert() {
+        
+        let message = String(format: "your last score is %ld", GameHandler.sharedInstance.game?.score ?? 0)
+        let alertController = UIAlertController(title: "Congrats", message: message, preferredStyle: .alert)
+        
+        let cancelAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.cancel) {
+            UIAlertAction in
+        }
+        alertController.addAction(cancelAction)
+        self.present(alertController, animated: true, completion: nil)
     }
     /*
     // MARK: - Navigation

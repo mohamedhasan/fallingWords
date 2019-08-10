@@ -11,6 +11,7 @@ import UIKit
 protocol WelcomePresenterProtocol {
     func wordsLoaded()
     func errorOccured()
+    func handleClosingGame()
 }
 
 class WelcomePresenter: NSObject {
@@ -24,14 +25,25 @@ class WelcomePresenter: NSObject {
         LanguageHandler.sharedInstance.loadWords(success: { () in
             GameHandler.sharedInstance.startNewGame(sourceLang: sourceLanguage, destLang: destLanguage)
             self.delegate?.wordsLoaded()
+            self.addGameEndedListener()
         }) { (error) in
             self.delegate?.errorOccured()
         }
+    }
+    
+    func addGameEndedListener() {
+        NotificationCenter.default.addObserver(self, selector: #selector(self.lastGameEnded(notification:)), name: Notification.Name("gameEnded"), object: nil)
     }
     
     func switchLanguage(index: Int) {
         sourceLanguage = languagesDataSource[index]
         destLanguage = languagesDataSource[(index + 1) % languagesDataSource.count]
     }
+    
+    @objc func lastGameEnded (notification: Notification) {
+        self.delegate?.handleClosingGame()
+    }
+        
+        
     
 }
