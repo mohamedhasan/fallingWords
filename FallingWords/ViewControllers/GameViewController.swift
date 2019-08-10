@@ -19,6 +19,8 @@ class GameViewController: BaseViewController,GamePresenterProtocol {
     @IBOutlet weak var labelScore : UILabel?
     @IBOutlet weak var labelTranslation : UILabel?
     @IBOutlet weak var labelWordPlaceholder : UIView?
+    @IBOutlet weak var buttonRight : UIButton?
+    @IBOutlet weak var buttonWrong : UIButton?
     
     var labelWord : UILabel?
     @IBOutlet weak var labelWordTop : NSLayoutConstraint?
@@ -55,6 +57,8 @@ class GameViewController: BaseViewController,GamePresenterProtocol {
     
     func showFallingWord(word:String) {
         
+        buttonRight?.isEnabled = true
+        buttonWrong?.isEnabled = true
         labelWord = UILabel()
         labelWord?.frame = labelWordPlaceholder!.frame
         labelWord?.font = labelTranslation?.font
@@ -89,6 +93,8 @@ class GameViewController: BaseViewController,GamePresenterProtocol {
     func giveFeedBack(result:QuestionResult) {
         
         let color = self.feedbackColor(result)
+        buttonRight?.isEnabled = false
+        buttonWrong?.isEnabled = false
         UIView.animate(withDuration: 1, animations: {
             self.viewHeader?.backgroundColor = color
         })

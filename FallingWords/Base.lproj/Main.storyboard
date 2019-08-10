@@ -199,6 +199,8 @@
                         <viewLayoutGuide key="safeArea" id="zkb-0Q-Fn5"/>
                     </view>
                     <connections>
+                        <outlet property="buttonRight" destination="qoY-Cp-Lbf" id="QdA-wT-HDC"/>
+                        <outlet property="buttonWrong" destination="TY0-GG-B5x" id="qd1-R7-aqb"/>
                         <outlet property="labelScore" destination="yZ9-WE-Y51" id="Zas-gu-O4k"/>
                         <outlet property="labelTimer" destination="KGz-LU-ZB3" id="2wH-LJ-JbF"/>
                         <outlet property="labelTranslation" destination="iSU-fx-XUg" id="HM9-j8-Od1"/>

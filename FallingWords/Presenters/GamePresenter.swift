@@ -66,7 +66,9 @@ class GamePresenter: NSObject {
         self.delegate?.updateScore(score: game!.score)
         self.delegate?.giveFeedBack(result: result)
         
-        self.showNextQuestion()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
+            self.showNextQuestion()
+        })
     }
     
     func noAnswer() {
