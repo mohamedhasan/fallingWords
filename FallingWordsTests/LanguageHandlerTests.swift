@@ -34,12 +34,15 @@ class LanguageHandlerTests: XCTestCase {
     
     func testRandomArray() {
         
-        let list = Array(1...100)
+        let list = Array(0...99)
         let randomList = list[randomPick:100]
         
-        var counter = 1
+        var counter = 0
         while counter == randomList[counter] {
             counter += 1
+            if counter == randomList.count {
+                break
+            }
         }
         
         XCTAssertNotEqual(list.count, counter)
