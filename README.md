@@ -1,9 +1,5 @@
-# Babbel iOS task
+### Falling words
 
-<br/>
-
-### Picked Solution:
-Falling words
 
 <br/>
 
